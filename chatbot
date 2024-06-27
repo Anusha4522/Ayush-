@@ -1,0 +1,64 @@
+observations=["Body size/ frameBody","weight","Hairs","Forehead","Eye brows","Eye lashes","Eyes","Nose","Lips","Teeth","Skin","Neck","Arm","Hands","Joints","Chest","Belly","Hips","Feet","Nails","Habit likes","Physical activity","Faith","Emotion","Mental activity","Memory","Food","Appetite","Digestion","Thirst","Faces","Body odour","Complexion","Dreams","Sleep","Pulse","Speech","Resistance to disease","Financial","Chin","cheeks"]
+symptoms=["1.thin and poor physique/ slim \n 2.Medium heigh and moderate physique \n 3.stout,big and good physique",
+          "1.low\n2.Medium\n3.Over weight",
+          "1.scandy or brown or coarse dry or brittle\n2.Moderate or fine or soft or strait or gray bald\n3. Abundant or oily or thick or curly or wavy",
+          "1.Small\n2. Folded\n3.Large",
+          "1.Small,dry and firm\n2.Moderate and fine\n3.Thick,bushy and many",
+          "1. Small ,dry, firm\n2.Small, thin, fine\n3.Large, thick, oily,firm",
+          "1.Small ,sunken, dry, active , black, brown, nervous\n2.Sharp, bright, red ,gray, green , sensitive to light\n3.Big, beautiful, blue,calm, loving white",
+          "1.Uneven shape, deviated septum\n2.Long pointed red nose tip\n3.Short, rounded, button nose",
+          "1.Uneven shape, deviated septum\n2.Medium,soft, red inflamed yellowish\n3.Smooth, oily, thick, large,pale",
+          "1.Stick out , big, roomy, thin gums\n2.Medium,soft tender gum\n3.Healthy, white, strong gum",
+          "1.Thin, dry ,cold, rough, dark\n2.smooth ,oily, warm ,rosy/pink\n3.Thick,oil,cool, white,pale",
+          "1.Thin, tall\n2.Medium\n3.Big, folded",
+          "1.Thin, small, poorly developed\n2.Medium\n3.Thick, large,long",
+          "1.Small, thin, dry, cold , rough\n2.Medium,warm ,pink\n3.Large, thick, oily, cold, firm",
+          "1.Small ,thin ,dry, unsteady, cracking\n2.Medium, soft,loose\n3.Large, thick,well built",
+          "1.Flat , sunken, narrow\n2. Moderate\n3.Expanded,round over development",
+          "1.Thin ,flat,sunken\n2.Moderate\n3.Big, pot bellied",
+          "1.Slender, thin\n2.Moderate\n3.Heavy,big",
+          "1.Small, thin , dry, darkish, unsteady, fissures\n2.Medium,soft, pink\n3.Large , thick, smooth, white",
+          "1.Small,thin,dry,rough, brittle\n2.Medium, soft, sharp, pink, firm , oily ( lustrous)\n3.Large,thick , oily , smooth, polished",
+          "1.Silly, moving, traveling, stories\n2.Sports, politics, painting\n3.Water , flowers, business",
+          "1. Quick,fast, erratic ( hyper activity)\n2.Medium,goal seeking\n3.Slow ,steady",
+          "1.Constant , conservative,loyal\n2.Leader, aggressive\n3.Erratic ,changeable,rebel, short tempered",
+          "1. Fearful, anxious, uncertainty\n2. Anger, hate, jealous, irritable\n3.Calm , greedy, attachment",
+          "1. Quick, adoptable\n2.Moderate,( intelligent) \n3.Slow , steady",
+          "1. Poor, easily grasp and easily forgets\n2.Sharp,clear\n3.Slowly grasps and will not forget",
+          "1.Sweet,sour, salt\n2.Sweet,bitter, astringent\n3.Bitter , pungent, astringent",
+          "1.Irregular, scanty\n2.Strong, unbreakable\n3.Slow but steady",
+          "1.Irregular form gas\n2.Quick cause burning\n3.Prolonged, formed mucus",
+          "1.Changeble\n2.Surplus\n3.Sparse",
+          "1.Scanty,dry, constipation\n2.Abundant,loose\n3.Moderate,solid/ sluggish",
+          "1.Scanty, no smell\n2.Profuse, strong smell\n3.Cold, pleasent smell",
+          "1.Dull, brown , darkish\n2.Red, flushed\n3.White,pale",
+          "1.Flying, moving, restless, nightmares\n2.Colourful, passionate, conflict ( war, violence)\n3.Romantic, sentimental,few,lake",
+          "1.Scanty, broken up, sleeplessness\n2.Little but sound\n3. Deep, prolonged",
+          "1.Thready, rapid, weak like snake , irregular\n2.Bounding, moderate like a pig\n3.Deep, slow , steady, slippery like swan",
+          "1.Rapid, unclear\n2.Sharp penetrating\n3.Slow, monotonous",
+          "1.Poor, variable, weak , immunity\n2.Medium,prone to infection\n3.Good consistent, strong immunity",
+          "1.Poor, spends on trifles\n2.Spends money on luxuries\n3.Rich, good money preserver",
+          "1.Thin, angular\n2.Tapering\n3.Rounded, double",
+          "1. Wrinkled, sunken\n2.Smooth, flat\n3.Rounded, plump"]
+vata=0
+pitta=0
+kapha=0
+for i in range(len(observations)):
+    print("\n")
+    print("select your",observations[i])
+    print(symptoms[i])
+    a=int(input())
+    if(a==1):
+        vata=vata+1
+    elif(a==2):
+        pitta=pitta+1
+    elif(a==3):
+        kapha=kapha+1
+    else:
+        print("wrong option \n retry")
+
+print("your vata percentage is",(vata/(vata+pitta+kapha))*100)
+print("your pitta percentage is",(pitta/(vata+pitta+kapha))*100)
+print("your kapha percentage is",(kapha/(vata+pitta+kapha))*100)
+
+
